@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ui/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Grocery Store Products</h1>
+        <table id="productsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>UOM ID</th>
+                    <th>Rate</th>
+                    <th>UOM Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Products will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="{{ url_for('static', filename='ui/script.js') }}"></script>
+</body>
+</html>
